@@ -34,18 +34,18 @@ const selectedAvatarId = ref("aurora");
 const avatarDraftId = ref(selectedAvatarId.value);
 
 const games = [
-  { id: 1, name: "翡翠天后", category: "老虎機", cover: "/games/jade-empress.png", icon: "翡", description: "踏入雲上神殿，蒐集翡翠符印，啟動天后祝福與連線獎勵。", volatility: "高", rtp: "96.42%", rtpTrend: "up", multiplier: "x2,000", status: "新上", statusTone: "new" },
-  { id: 2, name: "深海龍王", category: "捕魚機", cover: "/games/azure-dragon.png", icon: "龍", description: "以深海寶藏為目標，鎖定巨龍後可開啟限時加成與團隊獎池。", volatility: "中高", rtp: "97.10%", rtpTrend: "down", multiplier: "x1,500" },
-  { id: 3, name: "赤焰麻將", category: "棋牌", cover: "/games/red-mahjong.png", icon: "萬", description: "經典麻將節奏結合連莊機制，兼具策略與快速對局的爽感。", volatility: "中", rtp: "96.80%", rtpTrend: "up", multiplier: "x800" },
-  { id: 4, name: "星際躍升", category: "小遊戲", cover: "/games/neon-rocket.png", icon: "UP", description: "在倒數結束前選擇撤離時機，穿越星門取得即時倍率。", volatility: "高", rtp: "95.90%", rtpTrend: "down", multiplier: "x10,000", status: "待上", statusTone: "upcoming" },
-  { id: 5, name: "天宮寶藏", category: "老虎機", cover: "/games/jade-empress.png", icon: "寶", description: "集滿三枚天印進入寶藏回合，獲得自由旋轉與隨機倍數。", volatility: "中高", rtp: "96.20%", rtpTrend: "up", multiplier: "x1,200" },
-  { id: 6, name: "珊瑚戰線", category: "捕魚機", cover: "/games/azure-dragon.png", icon: "海", description: "在移動砲台間切換火力，捕捉高價值魚群與海底首領。", volatility: "中", rtp: "97.30%", rtpTrend: "down", multiplier: "x900" },
-  { id: 7, name: "金牌十三張", category: "棋牌", cover: "/games/red-mahjong.png", icon: "13", description: "以手牌布局創造最佳組合，支援快速配桌與好友牌局。", volatility: "中低", rtp: "97.05%", rtpTrend: "up", multiplier: "x300" },
-  { id: 8, name: "量子翻翻樂", category: "小遊戲", cover: "/games/neon-rocket.png", icon: "Q", description: "簡潔的翻牌玩法，每一步都可能打開倍數與驚喜獎勵。", volatility: "中", rtp: "96.10%", rtpTrend: "down", multiplier: "x500", status: "熱門", statusTone: "hot" },
-  { id: 9, name: "金曜財神", category: "老虎機", cover: "/games/jade-empress.png", icon: "金", description: "隨著金元寶連線累積財神加成，解鎖高倍率獎勵回合。", volatility: "高", rtp: "96.66%", rtpTrend: "up", multiplier: "x3,000", status: "維護", statusTone: "maintenance" },
-  { id: 10, name: "深藍獵手", category: "捕魚機", cover: "/games/azure-dragon.png", icon: "鯊", description: "在限時深海關卡鎖定獵物，協作擊破首領並爭取額外分紅。", volatility: "中高", rtp: "96.35%", rtpTrend: "down", multiplier: "x1,000" },
-  { id: 11, name: "百搭撲克", category: "棋牌", cover: "/games/red-mahjong.png", icon: "A", description: "多種牌型快速配對，讓每一手都能發揮策略與逆轉機會。", volatility: "中", rtp: "97.18%", rtpTrend: "up", multiplier: "x600" },
-  { id: 12, name: "糖果衝刺", category: "小遊戲", cover: "/games/neon-rocket.png", icon: "GO", description: "收集糖果能量躲避障礙，將連擊推進到更高的獎勵區間。", volatility: "中低", rtp: "95.80%", rtpTrend: "down", multiplier: "x450" },
+  { id: 1, name: "翡翠天后", category: "老虎機", cover: "/games/jade-empress.jpg", icon: "翡", description: "踏入雲上神殿，蒐集翡翠符印，啟動天后祝福與連線獎勵。", volatility: "高", rtp: "96.42%", rtpTrend: "up", multiplier: "x2,000", status: "新上", statusTone: "new" },
+  { id: 2, name: "深海龍王", category: "捕魚機", cover: "/games/azure-dragon.jpg", icon: "龍", description: "以深海寶藏為目標，鎖定巨龍後可開啟限時加成與團隊獎池。", volatility: "中高", rtp: "97.10%", rtpTrend: "down", multiplier: "x1,500" },
+  { id: 3, name: "赤焰麻將", category: "棋牌", cover: "/games/red-mahjong.jpg", icon: "萬", description: "經典麻將節奏結合連莊機制，兼具策略與快速對局的爽感。", volatility: "中", rtp: "96.80%", rtpTrend: "up", multiplier: "x800" },
+  { id: 4, name: "星際躍升", category: "小遊戲", cover: "/games/neon-rocket.jpg", icon: "UP", description: "在倒數結束前選擇撤離時機，穿越星門取得即時倍率。", volatility: "高", rtp: "95.90%", rtpTrend: "down", multiplier: "x10,000", status: "待上", statusTone: "upcoming" },
+  { id: 5, name: "天宮寶藏", category: "老虎機", cover: "/games/jade-empress.jpg", icon: "寶", description: "集滿三枚天印進入寶藏回合，獲得自由旋轉與隨機倍數。", volatility: "中高", rtp: "96.20%", rtpTrend: "up", multiplier: "x1,200" },
+  { id: 6, name: "珊瑚戰線", category: "捕魚機", cover: "/games/azure-dragon.jpg", icon: "海", description: "在移動砲台間切換火力，捕捉高價值魚群與海底首領。", volatility: "中", rtp: "97.30%", rtpTrend: "down", multiplier: "x900" },
+  { id: 7, name: "金牌十三張", category: "棋牌", cover: "/games/red-mahjong.jpg", icon: "13", description: "以手牌布局創造最佳組合，支援快速配桌與好友牌局。", volatility: "中低", rtp: "97.05%", rtpTrend: "up", multiplier: "x300" },
+  { id: 8, name: "量子翻翻樂", category: "小遊戲", cover: "/games/neon-rocket.jpg", icon: "Q", description: "簡潔的翻牌玩法，每一步都可能打開倍數與驚喜獎勵。", volatility: "中", rtp: "96.10%", rtpTrend: "down", multiplier: "x500", status: "熱門", statusTone: "hot" },
+  { id: 9, name: "金曜財神", category: "老虎機", cover: "/games/jade-empress.jpg", icon: "金", description: "隨著金元寶連線累積財神加成，解鎖高倍率獎勵回合。", volatility: "高", rtp: "96.66%", rtpTrend: "up", multiplier: "x3,000", status: "維護", statusTone: "maintenance" },
+  { id: 10, name: "深藍獵手", category: "捕魚機", cover: "/games/azure-dragon.jpg", icon: "鯊", description: "在限時深海關卡鎖定獵物，協作擊破首領並爭取額外分紅。", volatility: "中高", rtp: "96.35%", rtpTrend: "down", multiplier: "x1,000" },
+  { id: 11, name: "百搭撲克", category: "棋牌", cover: "/games/red-mahjong.jpg", icon: "A", description: "多種牌型快速配對，支援快速配桌與好友牌局。", volatility: "中", rtp: "97.18%", rtpTrend: "up", multiplier: "x600" },
+  { id: 12, name: "糖果衝刺", category: "小遊戲", cover: "/games/neon-rocket.jpg", icon: "GO", description: "收集糖果能量躲避障礙，將連擊推進到更高的獎勵區間。", volatility: "中低", rtp: "95.80%", rtpTrend: "down", multiplier: "x450" },
 ];
 
 const records = [
